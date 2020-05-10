@@ -1,0 +1,99 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+@import url(https://fonts.googleapis.com/css?family=Bungee);
+
+body {
+   background-color: rgb(49, 60, 73);
+}
+
+div:focus {
+   background-color: blue;
+}
+
+h1 {
+   text-align: center;
+   color: white;
+   font-family: "Bungee";
+   text-decoration: underline 2px orange;
+}
+
+h3 {
+   text-align: center;
+   color: white;
+   font-family: "Bungee";
+   text-decoration: underline 2px orange;
+}
+
+h4 {
+   text-align: center;
+   color: orange;
+   font-family: "Roboto";
+}
+
+h5 {
+   text-align: center;
+   color: white;
+   font-family: "Bungee";
+}
+
+p {
+   text-align: center;
+}
+
+.wrapper {
+   display: grid;
+   grid-template-columns: repeat(9, 1fr);
+   grid-template-rows: repeat (2, 2fr);
+   grid-column-gap: 1em;
+   grid-row-gap: 1em;
+   text-align: center;
+   font-family: "Bungee";
+   color: rgb(95, 95, 95);
+
+}
+
+
+.m20 { grid-area: 1 / 4;}
+.m30 { grid-area: 1 / 5;}
+.m45 { grid-area: 1 / 6;}
+
+.b5 { grid-area: 1 / 4;}
+.b10 { grid-area: 1 / 5;}
+.b15 { grid-area: 1 / 6;}
+
+.buttons { display: grid; margin: auto;}
+
+.countdown {grid-area: 1 / 5;}
+.up-btn {grid-area: 1 / 4; font-family: "Bungee"; color: rgb(95, 95, 95);}
+.down-btn {grid-area: 1 / 6; font-family: "Bungee"; color: rgb(95, 95, 95);}
+.start-btn {grid-area: 2 / 5; width: 7em; font-family: "Bungee"; margin: auto;}
+.pause-btn {grid-area: 2 / 5; width: 7em; font-family: "Bungee"; margin: auto;}
+.resume-btn {grid-area: 2 / 5; width: 7em; font-family: "Bungee"; margin: auto;}
+.reset-btn {grid-area: 2 / 5; width: 7em; font-family: "Bungee"; margin: auto;}
+
+.sessions-counter {
+   color: white;
+   font-family: "Bungee";
+   font-size: 120%;
+}
+
+.session-live {
+   color: orange;
+   font-family: "Bungee";
+   font-size: 120%;
+   animation: blinker 2s linear infinite;
+}
+
+   @keyframes blinker {
+      50% {
+         opacity: 0;
+      }
+   }
+
+.wrapper > div {
+   background: #ddd;
+   padding: 1em;
+}
+
+.wrapper > div:nth-child(odd) {
+   background: #ddd;
+}

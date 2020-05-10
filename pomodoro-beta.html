@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time to Focus</title>
+    <link href="beta.css" rel="stylesheet">
+</head>
+<body>
+    <h1>Time to focus!</h1>
+     <h4>First, quick pick your session length</h4>
+
+    <div class="wrapper">
+       <div class="m20">20</div>
+       <div class="m30">30</div>
+       <div class="m45">45</div>
+    </div>
+
+    <h4>And now your break length</h4>
+
+    <div class="wrapper">
+        <div class="b5" id="hidden">5</div>
+        <div class="b10">10</div>
+        <div class="b15">15</div>
+    </div>
+
+    <h4>If you want, customize your session</h4>
+
+    
+
+    <h3>Session Time</h3>
+    
+    <div class="wrapper">
+        <div class="countdown" id="countdown-session">test</div>
+        <button class="up-btn" id="increase-session">up</button>
+        <button class="down-btn" id="decrease-session">down</button>
+    </div>
+
+    <h3>Break Time</h3>
+
+    <div class="wrapper">
+        <div class="countdown" id="countdown-break">test</div>
+        <button class="up-btn" id="increase-break">up</button>
+        <button class="down-btn" id="decrease-break">down</button>
+    </div>
+
+    <div class="buttons">
+    <div class="wrapper">
+         <button class="start-btn" id="start-button">go</button>
+    </div>
+
+    <div class="wrapper">
+        <button class="pause-btn" id="pause-button">pause</button>
+    </div>
+
+    <div class="wrapper">
+        <button class="resume-btn" id="resume-button">resume</button>
+    </div>
+
+    <div class="wrapper">
+        <button class="reset-btn" id="reset-button">reset</button>
+    </div>
+   </div>
+<br>
+    <p class="sessions-counter" id="completed-sessions">Sessions completed: 0</p>
+    <p class="session-live" id="live-session"></p>
+
+    <script src="file-beta.js"></script>
+</body>
+</html>
